@@ -8,7 +8,6 @@
 ## 环境
 
 * python3 & mysql5.x(其他版本应该也可用)
-* 
 
 ## 部署
 
@@ -19,3 +18,6 @@
 > 不要使用太多线程数导致网站崩溃。  
 > 该爬虫可自行拓展，爬取全校同学成绩、考试、学籍、课程、校区等信息。  
 > 强智校园API文档 `https://qzapi.github.tlingc.com/api/authUser/`  
+
+## 支持大学(理论) 
+> https://qzapi.github.tlingc.com/support/
