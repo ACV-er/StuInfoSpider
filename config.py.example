@@ -1,0 +1,29 @@
+# !/usr/bin/python3
+# coding=utf-8
+
+# 数据库配置
+DB_HOST = 
+DB_PORT = 
+DB_NAME = 
+DB_USERNAME = 
+DB_PASS = 
+BUF_MAX = 100  # 同时可以插入多少条数据
+
+# 教务系统配置
+TARGET_URL = # "http://学校教务系统域名/app.do"  # 目标链接
+
+# 初始登录账户
+SID = 你的学号
+PASSWORD = 你的教务密码
+
+# 学号规则
+GRADE = ["201905"]  # 不同年级学号开头 比如 10级开头均为 2010 + 学院 + 班级 + 编号 则为"2010",数组内写多个
+COLLEGE_BEGIN = 1  # 学院编码起始
+COLLEGE_END = 100  # 学院编码结束，一般来说是一个学院几十个班，会在无学院时自动停止，可以设置一个较大的值。班级和个人编号同理
+CLASS_BEGIN = 1  # 班级编码起始
+CLASS_END = 100  # 班级编码结束
+PERSON_BEGIN = 1  # 个人编码起始
+PERSON_END = 100  # 个人编码结束
+
+# 多线程配置
+MAX_THREADS = 8
