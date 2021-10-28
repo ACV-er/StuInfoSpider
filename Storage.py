@@ -85,14 +85,3 @@ class Storage:
             with self.__buf_lock:
                 self.flush()
 
-
-# 单元测试
-if __name__ == "__main__":
-    test_data = '{"fxzy":"无","xh":"201705550820","xm":"丁浩东","dqszj":"2017","usertype":"2","yxmc":"信息工程学院",' \
-                + '"xz":4,"bj":"2017自动化3班","dh":"14789309202","email":"1246009411@qq.com","rxnf":"2017",' \
-                + '"xb":"男","ksh":"17430421151237","nj":"2017","qq":null,"zymc":"自动化"}'
-
-    storage = Storage()
-    for i in range(120):
-        storage.save(json.loads(test_data))
-    storage.flush()
